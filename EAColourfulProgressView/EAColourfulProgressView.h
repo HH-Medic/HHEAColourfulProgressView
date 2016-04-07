@@ -75,4 +75,6 @@ IB_DESIGNABLE
 /// 默认蓝色视图配置
 - (void)defaultBlueConfig;
 
+- (void)defaultConfig:(UIColor *)color;
+
 @end

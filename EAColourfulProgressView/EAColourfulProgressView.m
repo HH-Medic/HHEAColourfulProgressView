@@ -43,14 +43,20 @@ static NSUInteger const EAColourfulProgressViewNumberOfSegments = 3;
   [self setupView];
 }
 
+- (void)defaultConfig:(UIColor *)color
+{
+    self.initialFillColor = color;
+    self.oneThirdFillColor = color;
+    self.twoThirdsFillColor = color;
+    self.finalFillColor = color;
+}
+
 - (void)defaultBlueConfig
 {
     UIColor *aColor = [UIColor colorWithRed:0 green:162.0/255.0 blue:1 alpha:1];
     
-    self.initialFillColor = aColor;
-    self.oneThirdFillColor = aColor;
-    self.twoThirdsFillColor = aColor;
-    self.finalFillColor = aColor;
+    [self defaultConfig:aColor];
+
     self.containerColor = [UIColor clearColor];
     self.labelTextColor = [UIColor whiteColor];
 }
