@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, EAColourfulProgressViewType) {
   EAColourfulProgressViewType66to100 = 100
 };
 
-IB_DESIGNABLE
+
 @interface EAColourfulProgressView : UIView
 
 /**
